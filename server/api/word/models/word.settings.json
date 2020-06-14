@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "words",
+  "info": {
+    "name": "dictionary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "meaning": {
+      "type": "string",
+      "required": true
+    },
+    "de_example": {
+      "type": "string"
+    },
+    "en_example": {
+      "type": "string",
+      "required": true
+    },
+    "case": {
+      "model": "case"
+    },
+    "type": {
+      "model": "type"
+    }
+  }
+}

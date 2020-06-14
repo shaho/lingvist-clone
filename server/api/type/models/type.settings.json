@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "name": "type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "speech_type": {
+      "type": "string",
+      "required": true
+    },
+    "dictionaries": {
+      "collection": "word"
+    }
+  }
+}
